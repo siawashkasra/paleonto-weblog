@@ -1,0 +1,67 @@
+.container {
+    padding: 0px 10px 10px 10px;
+}
+
+nav {
+    background-color: #FEFFFD;
+}
+
+.intro {
+    background-color: #29454F;
+    height: 95vh;
+}
+
+.card-link {
+    float: right;
+}
+
+.head {
+    margin-top: 100px;
+    margin-left: 75px;
+}
+
+.sec-img img {
+    width: 578.779px;
+    height: 278px;
+}
+
+.sec2-img img {
+    width: 578.779px;
+    height: 278px;
+}
+
+.sec-img  {
+    padding: 100px 0px 100px 100px;
+}
+
+.sec-intro {
+    padding: 300px 0px 50px 0px;
+}
+
+.sec2-intro {
+    padding: 100px 0px 50px 0px;
+}
+
+.sec2-img {
+    padding: 300px 0px 100px 0px;
+}
+
+.card-img {
+    height: 200px;
+}
+
+.mb-3 {
+    background-color: whitesmoke;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.sec-box {
+    height: 100vh;
+}
+
+.sec-box img{
+
+    height: 400px;
+}
