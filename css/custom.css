@@ -65,3 +65,12 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 
     height: 400px;
 }
+
+.p-title {
+    padding-bottom: 20px;
+}
+
+.img-responsive {
+    width: 365px;
+    height: 280px;
+}
