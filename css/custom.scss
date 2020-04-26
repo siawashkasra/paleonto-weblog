@@ -1,9 +1,10 @@
+$max_pixels: 200px;
 .container {
   padding: 0px 10px 10px 10px;
 }
 
-.dino, .fossil {
-  padding-top: 200px;
+%section { 
+  padding-top: $max_pixels;
 }
 
 nav {
@@ -15,8 +16,12 @@ nav {
   height: 95vh;
 }
 
+.dino, .fossil {
+  @extend %section;
+}
+
 .fossil {
-  padding-bottom: 100px;
+  padding-bottom: $max_pixels / 2;
 }
 
 .card-link {
@@ -24,7 +29,7 @@ nav {
 }
 
 .card-img {
-  height: 200px;
+  height: $max_pixels;
 }
 
 .sec-box {
@@ -32,21 +37,21 @@ nav {
 }
 
 .sec-box img {
-  height: 400px;
+  height: $max_pixels * 2;
 }
 
 .p-title {
-  padding-bottom: 20px;
+  padding-bottom: $max_pixels / 10;
 }
 
 .quote {
-  padding-top: 10px;
+  padding-top: $max_pixels / 20;
   border: none;
 }
 
 h2, h4 {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: $max_pixels / 10;
+  padding-bottom: $max_pixels / 10;
 }
 
 #mold {
@@ -54,12 +59,12 @@ h2, h4 {
 }
 
 .g-item {
-  height: 200px;
+  height: $max_pixels;
   width: 287px;
 }
 
 .gallery {
-  padding: 20px;
+  padding: $max_pixels / 10;
 }
 
 .alternative-info {
@@ -77,6 +82,7 @@ h2, h4 {
     display: none;
   }
 }
+
 @media screen and (max-width: 800px) {
   .alternative-info {
     display: block;
@@ -95,14 +101,17 @@ h2, h4 {
     padding-bottom: 0px;
   }
 }
+
 footer {
   padding-top: 100px;
-}
-footer ul {
-  list-style: none;
-}
-footer ul li {
-  display: inline-block;
+
+  ul {
+    list-style: none;
+    
+    li {
+      display: inline-block;
+    }
+  }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -125,4 +134,3 @@ footer ul li {
   }
 }
 
-/*# sourceMappingURL=custom.css.map */
