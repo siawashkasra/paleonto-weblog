@@ -11,50 +11,20 @@ nav {
     height: 95vh;
 }
 
+.dino, .fossil {
+    padding-top: 200px;
+}
+
+.fossil {
+    padding-bottom: 100px;
+}
+
 .card-link {
     float: right;
 }
 
-.head {
-    margin-top: 100px;
-    margin-left: 75px;
-}
-
-.sec-img img {
-    width: 578.779px;
-    height: 278px;
-}
-
-.sec2-img img {
-    width: 578.779px;
-    height: 278px;
-}
-
-.sec-img  {
-    padding: 100px 0px 100px 100px;
-}
-
-.sec-intro {
-    padding: 300px 0px 50px 0px;
-}
-
-.sec2-intro {
-    padding: 100px 0px 50px 0px;
-}
-
-.sec2-img {
-    padding: 300px 0px 100px 0px;
-}
-
 .card-img {
     height: 200px;
-}
-
-.mb-3 {
-    background-color: whitesmoke;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .sec-box {
@@ -68,11 +38,6 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 
 .p-title {
     padding-bottom: 20px;
-}
-
-.img-responsive {
-    width: 365px;
-    height: 280px;
 }
 
 .quote {
@@ -98,12 +63,57 @@ h2, h4 {
     padding:20px;
 }
 
+.alternative-info {
+    display: none;
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 1200px) {
-   
+@media screen and (max-width: 1030px) {
+
+    .alternative-info {
+        display: block;
+        margin-top: 20px;
+    }
+    .info {
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+
+    .alternative-info {
+        display: block;
+        margin-top: 20px;
+    }
+    .info {
+        display: none;
+    }
+
+    .dino, .fossil {
+        padding-top: 0px;
+    }
+    
+    .fossil {
+        padding-bottom: 0px;
+    }
   }
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 600px) {
 
+    .alternative-info {
+        display: block;
+        margin-top: 20px;
+    }
+    .info {
+        display: none;
+    }
+
+    .dino, .fossil {
+        padding-top: 0px;
+    }
+    
+    .fossil {
+        padding-bottom: 0px;
+    }
   }
